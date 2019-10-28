@@ -22,6 +22,24 @@ class Doctor
   def self.all
     @@all
   end
+  
+  def new_appointment(time, patient)
+    Appointment.new(time, self, patient)
+  
+  end
+    
+  # def songs
+  #   Song.all.select do |song|
+  #     song.artist == self
+  #   end
+  
+  # end
+  
+  # def genres
+  #   songs.map do |song|
+  #     song.genre
+  #   end
+  # end
 end
     
   
