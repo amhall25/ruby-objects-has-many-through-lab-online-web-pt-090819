@@ -10,3 +10,14 @@
 # - THE `DOCTOR` CLASS NEEDS AN INSTANCE METHOD, `#PATIENTS`, THAT ITERATES OVER
 #   THAT DOCTOR'S `APPOINTMENT`S AND COLLECTS THE PATIENT THAT BELONGS TO EACH
 #   `APPOINTMENT`S.
+class Doctor
+  attr_accessor :name
+  @@all =[]
+  
+  def initialize(name)
+    @name=name
+    @@all << self
+  end
+end
+    
+  
