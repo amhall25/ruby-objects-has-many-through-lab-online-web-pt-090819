@@ -28,12 +28,12 @@ class Doctor
   
   end
     
-  # def songs
-  #   Song.all.select do |song|
-  #     song.artist == self
-  #   end
+  def appointments
+    Appointment.all.select do |appt|
+      appt.doctor == self
+    end
   
-  # end
+  end
   
   # def genres
   #   songs.map do |song|
