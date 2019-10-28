@@ -24,11 +24,11 @@ class Doctor
   
   end
   
-  # def genres
-  #   songs.map do |song|
-  #     song.genre
-  #   end
-  # end
+  def patients
+    appointments.map do |appt|
+      appt.patient
+    end
+  end
 end
     
   
